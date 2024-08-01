@@ -17,7 +17,7 @@ def download_file(url, filename):
     response = requests.get(url, verify=False)
     with open(filename, 'wb') as file:
         file.write(response.content)
-    print(f"Downloaded: {audio_filename}")
+    print(f"Downloaded: {filename}")
 
 # Download XML file
 xml_url = "https://proxy.wavpub.com/caffebreve.xml"
